@@ -1,0 +1,31 @@
+{
+  "description": "claude-toast-notify: Stop/Notification 事件触发 Windows Toast 桌面提醒",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.ps1\" -Event Stop",
+            "timeout": 5
+          }
+        ],
+        "description": "Claude 结束响应、轮到用户操作时弹出通知"
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.ps1\" -Event Notification",
+            "timeout": 5
+          }
+        ],
+        "description": "Claude 需要用户注意(请求授权/等待输入)时弹出通知"
+      }
+    ]
+  }
+}

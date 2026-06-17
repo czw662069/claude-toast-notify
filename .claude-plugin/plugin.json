@@ -1,0 +1,13 @@
+{
+  "name": "claude-toast-notify",
+  "version": "1.0.0",
+  "description": "Windows Toast 通知插件 - 在 Claude Code 结束响应(Stop)或需要你注意(Notification)时弹出桌面提醒",
+  "author": {
+    "name": "czw662069",
+    "url": "https://github.com/czw662069"
+  },
+  "homepage": "https://github.com/czw662069/claude-toast-notify",
+  "repository": "https://github.com/czw662069/claude-toast-notify",
+  "license": "MIT",
+  "keywords": ["windows", "toast", "notification", "hooks", "stop", "notification"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "claude-toast-notify",
+  "owner": {
+    "name": "czw662069",
+    "url": "https://github.com/czw662069"
+  },
+  "metadata": {
+    "description": "Windows Toast 通知插件 marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-toast-notify",
+      "description": "Windows Toast 通知插件 - Stop/Notification 事件触发桌面提醒",
+      "source": "./",
+      "strict": false
+    }
+  ]
+}

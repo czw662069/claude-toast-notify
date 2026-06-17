@@ -1,0 +1,13 @@
+# 用户本地配置(不应提交,各人各配置)
+.claude-toast-notify.json
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
